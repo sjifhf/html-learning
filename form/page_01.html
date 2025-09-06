@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本旅遊</title>
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            padding: 40px;
+        }
+        h1 {
+            text-decoration: underline;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        input[type="submit"] {
+            margin-top: 15px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>日本旅遊</h1>
+    
+    <form>
+        <label for="start-date">出發的日期</label>
+        <input type="date" id="start-date" name="start-date">
+
+        <label for="days">停留的天數</label>
+        <input type="number" id="days" name="days" min="1" max="100">
+
+        <br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
